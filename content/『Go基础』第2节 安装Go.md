@@ -1,6 +1,10 @@
-## 下载
+## 前言
 
-### 下载地址
+前面已经对GO语言做了一个简单的介绍，相信大家也已经基本有所了解了，那么我相信大家迫不及待的想学习GO语言了，但是我们在具体学习GO语言前，需要先安装GO的开发环境，只有把GO的开发环境安装好了，才能有GO语言的指令来开发网站，飞秋等等软件。
+
+所谓的环境安装，就是将GO语言的指令都安装在你的电脑上，那么你在开发软件的时候就可以直接用了。GO环境的安装分为windows系统的安装和linux系统的安装。
+
+## 下载地址
 
 Go语言官网下载地址: https://golang.org/dl/
 
@@ -12,11 +16,9 @@ Windows平台和Mac平台推荐下载可执行文件版, Linux平台下载压缩
 
 ![](https://i.loli.net/2019/11/22/5sBZMO4wAqvbFN8.png)
 
-## 安装
+## Windows系统下安装Go
 
-### Windows安装
-
-此次安装以`64位Windows10`系统安装`Go 1.13.4可执行文件版本`为例, 写这篇文章时此版本为最新版.
+此次安装以`64位Windows10`系统安装`Go 1.13.4可执行文件版本`为例。
 
 1. 打开下载好的安装包.
 
@@ -26,7 +28,7 @@ Windows平台和Mac平台推荐下载可执行文件版, Linux平台下载压缩
 
 ![](https://i.loli.net/2019/11/22/FaRbC8kyPBYOZj4.png)
 
-3. 选择Go语言的安装目录, 尽量选择比较容易记的.
+3. 选择Go语言的安装目录, 尽量选择比较容易记的（**安装路径中不要出现中文**）.
 
 ![](https://i.loli.net/2019/11/22/bD7udMQY5P8yNgC.png)
 
@@ -42,7 +44,7 @@ Windows平台和Mac平台推荐下载可执行文件版, Linux平台下载压缩
 
 ![](https://i.loli.net/2019/11/22/Xwtnrf4y8qvclmz.png)
 
-## 配置GOPATH
+### 配置GOPATH
 
 `GOPATH` 是一个环境变量, 用来表明你写的Go项目的存放路径. 
 
@@ -78,3 +80,60 @@ Windows平台下按照下面的步骤将 `E:\code\go` 添加到环境变量.
 
 ![](https://i.loli.net/2019/11/22/p8OeyIs4BXTMhvK.png)
 
+## Linux系统下安装Go
+
+我这里以Ubuntu2004为例。
+
+### 下载Go
+
+```bash
+wget https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz
+```
+
+**如果想要安装其它版本，只需要更改版本号就可以了。**
+
+下载之后解压到 `/usr/local/`
+
+```bash
+sudo tar -C /usr/local -xzf go1.14.2.linux-amd64.tar.gz
+```
+
+### 配置环境变量
+
+打开 `profile` 文件
+
+```bash
+sudo vi /etc/profile
+```
+
+打开之后添加如下三行：
+
+```bash
+export GOROOT=/usr/local/go
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+```
+
+添加之后效果如下：
+
+![image](https://i.loli.net/2020/05/11/4uzibFIHqV9D3Za.png)
+
+**说明：**
+
+- GOROOT就是刚才下载并解压之后得到的那个文件夹；
+- PATH后面加上go命令所在路径，这样，在任意地方输入go都可以被识别；
+- GOPATH这个根据个人情况设置，我推荐这个就设置为主文件夹下面的go文件夹（自己创建的），后面你从github上下的一些包，都要放在$GOPATH的src文件夹内，这样程序里才能找到这些包。
+
+改完 `profile` 文件之后执行下面命令使之生效：
+
+```bash
+source /etc/profile
+```
+
+然后，输入 `go env` ，看到如下输出，解说明安装成功且配置生效。
+
+![image](https://i.loli.net/2020/05/11/S7a4GoRxtNB8yuw.png)
+
+## 李培冠博客
+
+[lpgit.com](https://lpgit.com)

@@ -1,4 +1,8 @@
-> VS Code 是微软开源的一款编辑器, 本文主要介绍如何使用VS Code搭建Go语言的开发环境.
+## 前言
+
+前面我已经讲过 GoLand 的安装，当然，你也可以使用 `VS Code` 来进行开发。
+
+VS Code 是微软开源的一款编辑器, 本文主要介绍如何使用VS Code搭建Go语言的开发环境.
 
 ## 下载与安装VS Code
 官方下载地址: https://code.visualstudio.com/Download
@@ -48,7 +52,9 @@ Windows平台下按 `Ctrl+Shift+p`, Mac平台下按 `Command+Shift++p`, VS Code�
 > 4. 执行 `git clone https://github.com/golang/lint.git` 命令
 > 5. 在VS Code按下 `Ctrl / Command+Shift+p` 再次执行 `go:install/Update Tools` 命令, 在弹出的窗口中全选并点击确定, 这次安装就可以全部安装成功了.
 
-> 经过上面的步骤就可以安装成功了.
+经过上面的步骤就可以安装成功了.
 
+## 李培冠博客
 
+[lpgit.com](https://lpgit.com)
 

@@ -24,3 +24,7 @@ func main() {
 ![img](https://i.loli.net/2019/09/14/EYagf6B47OAIJwq.png)
 
 完美! 现在您已经学会怎样运行了一个Go程序了.
+
+## 李培冠博客
+
+[lpgit.com](https://lpgit.com)
