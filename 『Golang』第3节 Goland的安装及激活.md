@@ -12,7 +12,7 @@
 
 IDE(Integrated Development,集成开发环境)，我们GO语言在Windows下用到的IDE是什么呢？GoLand是一个跨平台的IDE，使用范围包括Windows，maxOS以及linux操作系统。
 
-## 安装GoLand
+## Windows下安装GoLand
 
 1. 登录`JetBrains`官网, 下载`GoLand`安装程序, 这里以`Windows`为例.
 
@@ -47,6 +47,41 @@ IDE(Integrated Development,集成开发环境)，我们GO语言在Windows下用�
 将刚才下载的补丁文件 `jetbrains-agent.jar` 放置在 GoLand 安装目录里面的 `lib` 目录里面
 
 3、 将补丁 **jetbrains-agent.jar** 放置到lib目录后，我们就可以启动软件了。
+
+## Linux下安装Goland
+
+1）首先进入下载页面：[https://www.jetbrains.com/go/download/](https://www.jetbrains.com/go/download/)
+
+2）点击下载：
+
+![image](https://i.loli.net/2020/05/20/Fz9qpU3ThrEdPYw.png)
+
+3）`cd` 到刚刚下载的文件的路径下面，默认是在 `下载` 文件夹下面，并使用 `tar` 命令将 `GoLand` 安装包解压到 `/opt/` 路径下
+
+```linux
+cd
+cd 下载
+sudo tar xvfz goland-2020.1.3.tar.gz -C /opt/
+```
+
+![image](https://i.loli.net/2020/05/20/DFJuVgR26naUHPv.png)
+
+4）进入到解压目录
+
+```linux
+cd /opt/GoLand-2020.1.3/bin/
+```
+
+5）运行 `golang.sh` 文件
+
+```linux
+./goland.sh
+```
+
+6）如果一切正常的话，就会弹出GoLand启动页面
+
+
+### 破解同上
 
 ## 李培冠博客
 
