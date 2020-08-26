@@ -56,5 +56,6 @@ Windows平台下按 `Ctrl+Shift+p`, Mac平台下按 `Command+Shift++p`, VS Code�
 
 ## 李培冠博客
 
-[lpgit.com](https://lpgit.com)
+欢迎访问我的个人网站：
 
+李培冠博客：[lpgit.com](https://lpgit.com)

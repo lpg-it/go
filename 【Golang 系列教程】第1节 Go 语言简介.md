@@ -1,3 +1,5 @@
+[toc]
+
 ## 1. Go语言是什么
 
 “Go 是一种开源的程序设计语言，它意在使得人们能够方便地构建简单、可靠、高效率的软件”（来自 go 官网 [golang.org](golang.org)）
@@ -48,4 +50,6 @@ Docker、Kubernetes、Lantern、Etcd、Hugo、InfluxDB、Grafana、prometheus、
 
 ## 李培冠博客
 
-[lpgit.com](https://lpgit.com)
+欢迎访问我的个人网站：
+
+李培冠博客：[lpgit.com](https://lpgit.com)

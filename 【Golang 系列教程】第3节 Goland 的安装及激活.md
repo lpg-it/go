@@ -85,4 +85,6 @@ cd /opt/GoLand-2020.1.3/bin/
 
 ## 李培冠博客
 
-[lpgit.com](https://lpgit.com)
+欢迎访问我的个人网站：
+
+李培冠博客：[lpgit.com](https://lpgit.com)
